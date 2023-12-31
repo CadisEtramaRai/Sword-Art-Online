@@ -1,2 +1,2 @@
-# Sword-Art-Online
+# Sword Art Online
 Parallax Website
