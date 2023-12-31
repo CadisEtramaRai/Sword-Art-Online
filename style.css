@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+
+.pimgfirst,
+.pimg1,
+.pimg2,
+.pimg3,
+.pimglast {
+    position: relative;
+    opacity: 0.9;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.pimgfirst {
+    background-image: url(img/parallax1.jpg);
+    height: 100%;
+}
+
+.pimg1 {
+    background-image: url(img/kirito.jpg);
+    height: 500px;
+}
+
+.pimg2 {
+    background-image: url(img/asuna.jpg);
+    height: 500px;
+}
+
+.pimg3 {
+    background-image: url(img/yui.jpg);
+    height: 500px;
+}
+
+.pimglast {
+    background-image: url(img/parallax2.jpg);
+    height: 100%;
+}
+
+.section {
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.section.section-sao,
+.section.section-asuna {
+    background-color: #B8E4ED;
+}
+
+.section.section-kirito,
+.section.section-yui {
+    background-color: #EAB7E3;
+}
+
+.section p {
+    color: #303030;
+}
+
+.section h2 {
+    color: #000;
+    font-size: 2rem;
+}
+
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.ptext span {
+    /* border: 1px white solid; */
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255, 0.2);
+    color: #000;
+    font-size: 3rem;
+    transition: all .5s;
+}
+
+.ptext span:hover {
+    background-color: #000;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+@media (max-width: 600px){
+.pimgfirst,
+.pimg1,
+.pimg2,
+.pimg3,
+.pimglast {
+    background-attachment: scroll;
+}
+}
